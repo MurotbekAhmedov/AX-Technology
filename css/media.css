@@ -1,0 +1,263 @@
+@media screen and (min-width:768px) and (max-width:1199px){
+    .header__logo>img{
+        width: 300px;
+    }
+    .button__first{
+        top: 26.5%;
+        left: 70%;
+    }
+    .button__second{
+        top: 58.5%;
+        left: 19.5%;
+        min-width: 131px;
+    }
+    .button__third{
+        top: 55%;
+        left: 52.5%;
+        min-width: 89px;
+    }
+    .button__fourth{
+        top: 82.5%;
+        left: 76%;
+        min-width: 89px;
+    }
+    .form__modal-box{
+        position: relative;
+        width: 80%;
+        height: 50%;
+    }
+    .form__modal-content__form>form{
+        padding: 40px 10px;
+    }
+    .form__modal-content__info{
+        padding: 40px 15px;
+    }
+    .form__modal-content__info h2{
+        width: 252px;
+        font-size: 35px;
+    }
+    .form__modal-content__info p{
+        font-size: 16px;}
+
+}
+@media screen and (min-width:375px) and (max-width:767px){
+    .header__logo>img{
+        width: 140px;
+    }
+    header{
+
+        padding: 10px 10px 0px 10px;
+
+    }
+    .header__messangers{
+        width: 70px;
+    }
+    .header__messangers > a:nth-child(1){
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .header__messangers a img{
+        width: 20px;
+        height: 20px;
+    }
+    .header__phone{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .main__background{
+       background-position: 20%;
+       background-size: 100% 100%;
+    }
+    .button__first{
+        top: 26.5%;
+        left: 40%;
+    }
+    .button__second{
+        top: 58.5%;
+        left: 9.5%;
+        min-width: 131px;
+    }
+    .button__third{
+        top: 50%;
+        left: 32.5%;
+        min-width: 89px;
+    }
+    .button__fourth{
+        top: 72.5%;
+        left: 66%;
+        min-width: 89px;
+    }
+    .form__modal-content{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto 1fr;
+
+    }
+    .form__modal-box{
+        position: relative;
+        width: 80%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .form__modal-content__form>form{
+        padding: 20px 10px;
+    }
+    .form__modal-content__info{
+        padding: 10px 15px;
+    }
+    .form__modal-content__info h2{
+        width: 252px;
+        font-size: 25px;
+    }
+    .form__modal-content__info p{
+        font-size: 14px;
+    }
+    .form__modal-content__info-items{
+        margin: 15px auto;
+    }
+    .form__modal-items{
+        right: -30px;
+    }
+    .form__modal-items img{
+      width: 30px;
+      height: 30px;
+
+        }
+    form > input{
+        border: none;
+        border-bottom: 1px solid rgba(145, 145, 145,0.5);
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+        height: 25px;
+        margin-bottom: 40px;
+        background: transparent;
+    }
+    form > button{
+        height: 40px;
+        font-size: 14px;
+    }
+    .button-form{
+        width: 250px;
+        font-size: 14px;
+        padding: 5px 10px;
+
+    }
+}
+@media (max-width:374px){
+    .header__logo>img{
+        width: 140px;
+    }
+    header{
+
+        padding: 10px 10px 0px 10px;
+
+    }
+    .header__messangers{
+        width: 70px;
+    }
+    .header__messangers > a:nth-child(1){
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .header__messangers a img{
+        width: 20px;
+        height: 20px;
+    }
+    .header__phone{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .main__background{
+       background-position: 20%;
+       background-size: 100% 100%;
+    }
+    .button__first{
+        top: 26.5%;
+        left: 40%;
+    }
+    .button__second{
+        top: 58.5%;
+        left: 9.5%;
+        min-width: 131px;
+    }
+    .button__third{
+        top: 50%;
+        left: 32.5%;
+        min-width: 89px;
+    }
+    .button__fourth{
+        top: 72.5%;
+        left: 66%;
+        min-width: 89px;
+    }
+    .form__modal-content{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto 1fr;
+
+    }
+    .form__modal-box{
+        position: relative;
+        width: 90%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .form__modal-content__form>form{
+        padding: 20px 10px;
+    }
+    .form__modal-content__info{
+        padding: 10px 15px;
+    }
+    .form__modal-content__info h2{
+        width: 202px;
+        font-size: 25px;
+    }
+    .form__modal-content__info p{
+        font-size: 14px;
+    }
+    .form__modal-content__info-items{
+        margin: 15px auto;
+    }
+    .form__modal-items{
+        right: -10px;
+        top: -30px;
+    }
+    .form__modal-items img{
+      width: 30px;
+      height: 30px;
+
+        }
+    form > input{
+        border: none;
+        border-bottom: 1px solid rgba(145, 145, 145,0.5);
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+        height: 25px;
+        margin-bottom: 40px;
+        background: transparent;
+    }
+    form > button{
+        height: 40px;
+        font-size: 14px;
+    }
+    .button-form{
+        width: 250px;
+        font-size: 14px;
+        padding: 5px 10px;
+
+    }
+}

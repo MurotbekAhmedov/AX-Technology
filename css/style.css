@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+
+}
+header{
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 30px 30px 0px 30px;
+
+}
+.header__logo{
+    margin-bottom: 5px;
+}
+.header__logo>img{
+    width: 350px;
+}
+.header__contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.header__messangers{
+    width: 105px;
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    align-items: center;
+}
+.header__messangers > a:nth-child(1){
+    margin-left: 20px;
+    margin-right: 15px;
+}
+.header__phone{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 15px;
+    align-items: center;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+.main__background{
+    background: url(../assets/images/Background.png) no-repeat ;
+   
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+}
+.main__background-gradient__top{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+.main__background-gradient__bottom{
+    width: 100%;
+    height: 43%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.8;
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+
+}
+.button{
+    position: absolute;
+    z-index: 5;
+    height: 25px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 3px 4px;
+    background: #000;
+    color: #FFFFFF;
+    font-size: 14.286px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+.button__name{
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    color: #000;
+    font-weight: 600;
+}
+.button__first{
+    top: 26.5%;
+    left: 50%;
+}
+.button__second{
+    top: 63.5%;
+    left: 9.5%;
+    min-width: 131px;
+}
+.button__third{
+    top: 61%;
+    left: 32.5%;
+    min-width: 89px;
+}
+.button__fourth{
+    top: 82.5%;
+    left: 66%;
+    min-width: 89px;
+}
+
+.main__modal{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    backdrop-filter: blur(5px);
+    display: none;
+}
+.main__modal.show{
+    display: block;
+}
+.main__modal-box{
+    position: relative;
+    width: 90%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.main__modal-items{
+position: absolute;
+color: #FFFFFF;
+top: -55px;
+right: 0;
+display: flex;
+justify-content: space-between;
+width: 150px;
+font-size: 16px;
+text-align: center;
+align-items: center;
+}
+.main__modal-items> div:nth-child(1){
+    border: 1px solid #FFFFFF;
+    padding: 1px 5px;
+}
+.main__modal-items> div:nth-child(3)>img{
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+}
+.close{
+    cursor: pointer;
+}
+.main__modal-img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 100%;
+}
+
+.form__modal{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.90);
+    backdrop-filter: blur(10px);
+    color: #FFFFFF;
+    display: none;
+}
+.form__modal.show{
+    display: block;
+}
+.form__modal-box{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.form__modal-items{
+position: absolute;
+color: #FFFFFF;
+top: -20px;
+right: -40px;
+display: flex;
+justify-content: space-between;
+width: auto;
+font-size: 16px;
+text-align: center;
+align-items: center;
+cursor: pointer;
+}
+.form__modal-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+.form__modal-content__form>form{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 30px;
+}
+.form__modal-content__info{
+    text-align: center;
+    background: url(/assets/images/form-img.png) no-repeat;
+    background-size: cover;
+    padding: 80px 25px;
+}
+.form__modal-content__info h2{
+    width: 402px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 100%; /* 45px */
+    text-transform: capitalize;
+    font-size: 45px;
+    margin: 0 auto;
+}
+.form__modal-content__info p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.form__modal-content__info-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+    color: #FFFFFF;
+}
+.form__modal-content__info-items a{
+    display: flex;
+    align-items: center;
+    color: #F3F2EF;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210.2%;
+}
+.form__modal-content__info-items a img{
+    margin-right: 10px;
+}
+.form__modal-content__info-items a:nth-child(1){
+    margin-right: 30px;
+}
+form > input{
+    border: none;
+    border-bottom: 1px solid rgba(145, 145, 145,0.5);
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+    background: transparent;
+}
+form > input:focus{
+
+    outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #00000029;
+}
+form > button{
+    height: 50px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    text-transform: uppercase;
+}
+.button-form{
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    background: #000;
+    border: none;
+    width: 310px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.button-form div{
+    margin-left: 10px;
+}
